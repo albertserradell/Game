@@ -1,0 +1,157 @@
+body {
+    background: rgb(34, 249, 189);
+    padding: 0;
+    margin: 0;
+    font-family: tahoma;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 100%;
+    width: 1024px;
+    margin: 0 auto;
+    /* padding: 15px; */
+}
+
+.left_column {
+    width: 100%;
+    margin: 0;
+    float: none;
+    position: fixed;
+    left: 0;
+    text-align: center;
+    background: rgb(62, 62, 62);
+    padding: 15px 0;
+    z-index:3;
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.75);
+    top: 0;
+}
+
+.right_column {
+    width:100%;
+    float: left;
+    margin: 75px auto 0 auto;
+}
+
+
+
+
+div#mastermind {
+    width: 500px;
+    height: 1200px;
+    background: url('../img/bg.png') repeat-y center;
+    display: block;
+    /* float: left; */
+    margin: 0 auto;
+}
+
+.linia {
+    float: left;
+    width: 100%;
+    height: 90px;
+    padding: 0 0 0 27px;
+    margin: 15px auto;
+    background: url(../img/bg-linia.png) no-repeat 19px center;
+}
+
+.quadrat {
+    width: 65px;
+    float: left;
+    margin-right: 18px;
+    height: 65px;
+    border: 0;
+    margin-top: 5px;
+}
+
+
+.quadrat.red {background: transparent url('../img/colors/red.png') no-repeat center;}
+.quadrat.blue {background: transparent url('../img/colors/blue.png') no-repeat center;}
+.quadrat.yellow {background: transparent url('../img/colors/yellow.png') no-repeat center;}
+.quadrat.green {background: transparent url('../img/colors/green.png') no-repeat center;}
+.quadrat.orange {background: transparent url('../img/colors/orange.png') no-repeat center;}
+.quadrat.black {background: transparent url('../img/colors/black.png') no-repeat center;}
+.quadrat.white {background: transparent url('../img/colors/white.png') no-repeat center;}
+.quadrat.purple {background: transparent url('../img/colors/purple.png') no-repeat center;}
+.quadrat.grey {background: transparent url('../img/colors/grey.png') no-repeat center;}
+.quadrat.cyan {background: transparent url('../img/colors/cyan.png') no-repeat center;}
+
+
+input[value="submit"] {
+    width: 85px;
+    height: 85px;
+    background: #96ef96;
+    border-radius: 50%;
+    border: 1px solid #65f365;
+    margin-right: 21px;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.result {
+    float: right;
+    margin-right: 62px;
+    text-align: right;
+    width: 75px;
+    margin-top: 8px;
+}
+
+.result img {
+    width: 35px;
+    height: 35px;
+    float: right;
+}
+
+div#mastermind-before {
+    background: url(../img/bg-head.png) no-repeat center bottom;
+    height: 100px;
+}
+
+div#mastermind-after {
+    background: url(../img/bg-bot.png) no-repeat center top;
+    height: 100px;
+}
+.buttons_left {
+    float: none;
+    display: inline-block;
+}
+h1 {
+    font-size: 3eM;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.left_column input {
+    color: transparent;
+}
+
+.colors_win {
+    float: none;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -170px;
+    width: 340px;
+    height: 70px;
+    z-index:1;
+    top: 91px;
+}
+
+.colors_win_hidden{
+    background: #818181;
+    float: none;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -170px;
+    width: 340px;
+    height: 70px;
+    z-index:2;
+    top: 85px;
+}

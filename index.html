@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mastermind</title>
+<script src="js/jquery.js">
+</script>
+<script src="js/mastermind.js">
+</script>
+<link href="css/mastermind.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div class="container">
+	<h1></h1>
+   <!-- <div id="selection">
+        <input type="text" value="4" id="height">
+        <input type="text" value="10" id="width">
+        <input type="button" id="button" value="ok"/>
+    </div> -->
+
+  
+<div class="left_column">
+	<div class="buttons_left">
+        <input type="button" value="blue" class="quadrat blue" style="display:none;">
+        <input type="button" value="white" class="quadrat white"style="display:none;">
+        <input type="button" value="black" class="quadrat black"style="display:none;">
+        <input type="button" value="purple" class="quadrat purple"style="display:none;">
+        <input type="button" value="green" class="quadrat green"style="display:none;">
+        <input type="button" value="grey" class="quadrat grey"style="display:none;">
+        <input type="button" value="cyan" class="quadrat cyan"style="display:none;">
+        <input type="button" value="yellow" class="quadrat yellow"style="display:none;">
+        <input type="button" value="red" class="quadrat red"style="display:none;">
+        <input type="button" value="orange" class="quadrat orange"style="display:none;">
+	</div>
+</div>
+	<div class="right_column">
+    	<div id="mastermind-before">
+       		<div class="colors_win_hidden"></div>
+        	<div class="colors_win"></div>
+        </div>
+		<div id="mastermind">
+        	<div class="linia pos_1">
+            <input type="button" value="submit" style="display:none">
+                <div class="quadrat pos_1"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_2"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_3"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_4"><input type="hidden" value="default"></div>
+				<div class="result"></div>
+            </div>
+            <div class="linia pos_2">
+                <input type="button" value="submit" style="display:none">
+                <div class="quadrat pos_1"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_2"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_3"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_4"><input type="hidden" value="default"></div>
+<div class="result"></div>
+            </div>
+            <div class="linia pos_3">
+                <input type="button" value="submit" style="display:none">
+                <div class="quadrat pos_1"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_2"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_3"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_4"><input type="hidden" value="default"></div>
+<div class="result"></div>
+            </div>
+            <div class="linia pos_4">
+                <input type="button" value="submit" style="display:none">
+                <div class="quadrat pos_1"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_2"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_3"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_4"><input type="hidden" value="default"></div>
+<div class="result"></div>
+            </div>
+            <div class="linia pos_5">
+                <input type="button" value="submit" style="display:none">
+                <div class="quadrat pos_1"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_2"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_3"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_4"><input type="hidden" value="default"></div>
+<div class="result"></div>
+            </div>
+            <div class="linia pos_6">
+                <input type="button" value="submit" style="display:none">
+                <div class="quadrat pos_1"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_2"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_3"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_4"><input type="hidden" value="default"></div>
+<div class="result"></div>
+            </div>
+                <div class="linia pos_7">
+                <input type="button" value="submit" style="display:none">
+                <div class="quadrat pos_1"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_2"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_3"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_4"><input type="hidden" value="default"></div>
+<div class="result"></div>
+            </div>
+            <div class="linia pos_8">
+                <input type="button" value="submit" style="display:none">
+                <div class="quadrat pos_1"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_2"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_3"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_4"><input type="hidden" value="default"></div>
+<div class="result"></div>
+            </div>
+            <div class="linia pos_9">
+                <input type="button" value="submit" style="display:none">
+                <div class="quadrat pos_1"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_2"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_3"><input type="hidden" value="default"></div>
+              <div class="quadrat pos_4"><input type="hidden" value="default"></div>
+<div class="result"></div>
+            </div>
+            <div class="linia pos_10">
+                <input type="button" value="submit" style="display:none">
+                <div class="quadrat pos_1"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_2"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_3"><input type="hidden" value="default"></div>
+                <div class="quadrat pos_4"><input type="hidden" value="default"></div>
+<div class="result"></div>
+            </div>
+		</div>
+        <div id="mastermind-after"></div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
